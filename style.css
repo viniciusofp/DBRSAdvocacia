@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Pluto Sans';
+  src: url("fonts/PlutoSansRegular.eot");
+  src: url("fonts/PlutoSansRegular.eot?#iefix") format("embedded-opentype"), url("fonts/PlutoSansRegular.woff") format("woff"), url("fonts/PlutoSansRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Pluto Sans';
+  src: url("fonts/PlutoSansLight.eot");
+  src: url("fonts/PlutoSansLight.eot?#iefix") format("embedded-opentype"), url("fonts/PlutoSansLight.woff") format("woff"), url("fonts/PlutoSansLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Pluto Sans';
+  src: url("fonts/PlutoSansBold.eot");
+  src: url("fonts/PlutoSansBold.eot?#iefix") format("embedded-opentype"), url("fonts/PlutoSansBold.woff") format("woff"), url("fonts/PlutoSansBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+body {
+  background-color: #181818;
+  color: white;
+  font-family: 'Pluto Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
+
+.logo-big {
+  margin: 30px; }
+
+/*# sourceMappingURL=style.css.map */
