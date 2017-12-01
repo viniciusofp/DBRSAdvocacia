@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('fonts/PlutoSansRegular.eot');
+    src: url('fonts/PlutoSansRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlutoSansRegular.woff') format('woff'),
+        url('fonts/PlutoSansRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('fonts/PlutoSansLight.eot');
+    src: url('fonts/PlutoSansLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlutoSansLight.woff') format('woff'),
+        url('fonts/PlutoSansLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('fonts/PlutoSansBold.eot');
+    src: url('fonts/PlutoSansBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlutoSansBold.woff') format('woff'),
+        url('fonts/PlutoSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+}
+
+body {
+    // padding-top: 50px;
+	background-color: #181818;
+	color: white;
+	font-family: 'Pluto Sans', sans-serif;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.004);
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+h1,h2,h3 {
+    font-weight: 300;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    background: #181818;
+}
+
+.logo-big {
+    display: inline-block;
+	margin: 30px;
+    max-width: 200px;
+}
+
+.bg-div {
+    background-image: url("img/foto1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-item {
+    border: 1px solid rgba(52,52,52,.3);
+    height: 340px;
+}
+
+.item1 {
+    background: #fafafa;
+    color: #402a3f;
+    & > div {
+        width: 100%;
+        padding: 15px;
+    }
+}
+li button {
+    margin-bottom: 10px;
+    border-radius: 0!important;
+}
+
+.linha {
+    transform: rotateZ(-3deg);
+    width: 125px;
+    height: 5px;
+    background:  rgba(52,52,52,.3);
+    margin: 10px auto 30px;
+}
+
+.item2 {
+    background: #402a3f;
+    color: white;
+    & > div {
+        width: 100%;
+        padding: 15px;
+    }
+}
+.item3 {
+    background:  rgba(10,10,10,.5);
+    color: white;
+    & > div {
+        width: 100%;
+        padding: 15px;
+    }
+}
+.item4 {
+    background: #000;
+    color: white;
+    & > div {
+        width: 100%;
+        padding: 15px;
+    }
+}
