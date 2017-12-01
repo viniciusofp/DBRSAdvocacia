@@ -117,6 +117,14 @@ li button {
     cursor: pointer;
 }
 
+.btn-outline-light.active, .btn-outline-light:active,
+.btn-outline-light.focus, .btn-outline-light:focus {
+
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: transparent;
+}
+
 .linha {
     transform: rotateZ(-3deg);
     width: 125px;
@@ -156,26 +164,40 @@ li button {
 
 .team-member {
     display: none;
-    min-height: 340px;
-    bottom: 0;
-    right: 0;
+    height: 680px;
+    top: 340px;
+    bottom: 0;
+    left: 0;
     width: 50%;
     position: absolute;
-    background: #121212;
+    background: #0a0a0a;
     border: 1px solid rgba(52,52,52,.3);
-    
+
     color: white;
     transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     padding: 30px;
     .oi-x   {
         position: absolute;
         top: -40px;
-        left: -25px;
+        right: -25px;
         font-size: 24px;
         color: chocolate;
     }
     h1 small {
         opacity: .5;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .team-member {
+        top: 680px!important;
+        bottom: initial;
+        left: 0!important;
+        width: 66.6667%;
+        .oi-x   {
+            right: -25px!important;
+            left: initial;
+        }
     }
 }
 

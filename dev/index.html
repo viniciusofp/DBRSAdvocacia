@@ -42,38 +42,39 @@
           </div>
         </div>
         
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item2">
-          <div class="absolute-center text-center">
-            <h2>Sobre nós</h2>
-            <div class="linha" style="background: white; margin-bottom: 20px; margin-top: 10px; height: 2px"></div>
-            <p class="lead">Clientii nostri reprezinta sursa noastra de inspiratie si de provocare.</p>
-             <a href="sobre.html"><button type="button" class="btn btn-outline-light">Leia mais</button></a>
-          </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item3">
         </div>
         
         <div class="d-none d-lg-flex d-xl-flex  col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item"></div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item3">
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item"></div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item "></div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item3">
           <div class="absolute-center text-center">
             <h2>Equipe</h2>
             <div class="linha" style="background: white; margin-bottom: 20px; margin-top: 10px; height: 2px"></div>
             <ul class="list-inline">
               <li class="li">
-                <button id="d" type="button" class="btn btn-outline-light">Miles <strong>Davis</strong></button>
+                <button id="d" type="button" class="btn btn-outline-light equipe-btn">Miles <strong>Davis</strong></button>
               </li>
               <li class="li">
-                <button id="b" type="button" class="btn btn-outline-light">Charles <strong>Bradley</strong></strong></button></li>
+                <button id="b" type="button" class="btn btn-outline-light equipe-btn">Charles <strong>Bradley</strong></strong></button></li>
               <li class="li">
-                <button id="r" type="button" class="btn btn-outline-light">Joey <strong>Ramone</strong></button></li>
+                <button id="r" type="button" class="btn btn-outline-light equipe-btn">Joey <strong>Ramone</strong></button></li>
               <li class="li">
-                <button id="s" type="button" class="btn btn-outline-light">Ringo <strong>Starr</strong></button></li>
+                <button id="s" type="button" class="btn btn-outline-light equipe-btn">Ringo <strong>Starr</strong></button></li>
             </ul>
-          </div></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item"></div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item "></div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item3">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item "></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item2">
+          <div class="absolute-center text-center">
+            <h2>Sobre nós</h2>
+            <div class="linha" style="background: white; margin-bottom: 20px; margin-top: 10px; height: 2px"></div>
+            <p class="lead">Clientii nostri reprezinta sursa noastra de inspiratie si de provocare.</p>
+             <a href="sobre.html"><button type="button" class="btn btn-outline-light">Leia mais</button></a>
+          </div></div>
       </div>
     </div>
     <div id="d-about" class="team-member">
@@ -134,7 +135,6 @@
           <h1><span style="font-weight: 500">Ringo</span> Starr <small>/ Beatles Drummer</small></h1>
           <p>Sir Richard Starkey, MBE (Liverpool, 7 de julho de 1940),[1] mais conhecido pelo seu nome artístico Ringo Starr, é um músico, baterista, multi-instrumentista, cantor, compositor e ator britânico, que ganhou fama mundial como baterista dos Beatles após substituir Pete Best, ficando nos Beatles até a separação do grupo em 1970. Quando a banda foi formada em 1960, Starr era membro de outra banda de Liverpool, Rory Storm and the Hurricanes. Além de atuar como baterista, Starr foi intérprete de canções de sucesso dos Beatles (em particular, "With a Little Help from My Friends" e "Yellow Submarine"), como co-autor em "What Goes On" e compôs "Don't Pass Me By" e "Octopus's Garden".</p>
           <p>Ringo é conhecido pelo seu estilo seguro de tocar e pelos seus toques de originalidade. O apelido Ringo surgiu por causa dos anéis que Ringo gostava de usar (ring quer dizer anel em inglês). Ele também é vegetariano, assim como outros integrantes dos Beatles, Paul McCartney e George Harrison. Em 2011, Starr foi eleito o 4º maior baterista de todos os tempos pela revista Rolling Stone.</p>
-          <p>Após a dissolução dos Beatles em 1970, Starr lançou-se em uma carreira solo de sucessos, e formou uma banda a All Starr Band, na ativa desde 1989.</p>
         </div>
       </div>
     </div>
@@ -146,7 +146,7 @@
           <h2 class="text-center">Fale Conosco</h2>
           <div class="linha" style="margin-bottom: 5px; background: chocolate; height: 2px;"></div>
           <ul class="list-inline" style="margin-bottom: 0">
-            <li class="list-inline-item"><span class="oi oi-envelope-closed" title="envelope-closed" aria-hidden="true"></span> dbrsadvocacia@gmail.com</li>
+            <li class="list-inline-item"><span class="oi oi-envelope-closed" title="envelope-closed" aria-hidden="true"></span> dbrs.advocacia@gmail.com</li>
             <li class="list-inline-item"><span class="oi oi-phone" title="phone" aria-hidden="true"></span> (11) 9 9116 9592</li>
           </ul>
         </div>
@@ -177,13 +177,17 @@
           if (! $(about).hasClass('open')) {
             $('.team-member').removeClass('open');
             $(about).addClass('open');
+            $('.equipe-btn').removeClass('active');
+            $(this).addClass('active');
           } else {
             $('.team-member').removeClass('open');
+            $('.equipe-btn').removeClass('active');
           }
         })
           
       })
       $('.oi-x').click(function() {
+        $('.equipe-btn').removeClass('active');
         $('.team-member').removeClass('open');
       })
     </script>
