@@ -1,5 +1,7 @@
 @import 'bootstrap';
 
+$cor1: #2b4046;
+$cor2: chocolate;
 
 @font-face {
     font-family: 'Pluto Sans';
@@ -35,7 +37,7 @@ html {
 }
 
 a {
-    color: chocolate;
+    color: $cor2;
 }
 
 a:hover,
@@ -81,16 +83,6 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
-.navbar {
-    background: #181818;
-}
-
-.logo-big {
-    display: inline-block;
-	margin: 30px;
-    max-width: 200px;
-}
-
 .main-wrapper {
     position: relative;
 }
@@ -108,7 +100,7 @@ h2 {
 
 .item1 {
     background: #fafafa;
-    color: #402a3f;
+    color: $cor1;
     & > div {
         width: 100%;
         padding: 15px;
@@ -123,7 +115,7 @@ li button {
 .btn-outline-light.active,
 .btn-outline-light.focus   {
 
-    color: #212529;
+    color: $cor1;
     background-color: #f8f9fa;
     border-color: transparent;
 }
@@ -137,7 +129,7 @@ li button {
 }
 
 .item2 {
-    background: chocolate;
+    background: $cor1;
     color: white;
     & > div {
         width: 100%;
@@ -184,7 +176,8 @@ li button {
         top: -40px;
         right: -25px;
         font-size: 24px;
-        color: chocolate;
+        color: $cor2;
+        text-shadow: 1px 0px 1px rgba(0,0,0,.5);
     }
     h1 small {
         opacity: .5;
@@ -193,13 +186,38 @@ li button {
 
 @media all and (max-width: 1199px) {
     .team-member {
+        top: 340px;
+        bottom: initial;
+        left: 0;
+        width: 66.6667%;
+        .oi-x   {
+            right: -25px;
+            left: initial;
+        }
+    }
+}
+@media all and (max-width: 767px) {
+    .team-member {
         top: 680px!important;
         bottom: initial;
         left: 0!important;
-        width: 66.6667%;
+        width: 100%;
         .oi-x   {
-            right: -25px!important;
+            right: 50%!important;
             left: initial;
+            transform: translate(50%, 0)
+        }
+    }
+}
+@media all and (max-width: 575px) {
+    .team-member {
+        height: auto;
+        z-index: 9999;
+        .oi-x   {
+            position: relative;
+            left: 50%;
+            top: -10px;
+            transform: translate(-50%,0);
         }
     }
 }
