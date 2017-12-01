@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -21,102 +22,9 @@
 
   </head>
   <body>
-    <!-- Navbar -->
-<!--     <nav class="navbar fixed-top navbar-expand-md navbar-dark">
-      <a class="navbar-brand" href="#" style="font-weight: normal;">DBRS</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav mr-auto">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link" href="#">Disabled</a>
-        </div>
-          <span class="navbar-text">
-            Navbar text with an inline element
-          </span>
-      </div>
-    </nav> -->
+  <div class="main-wrapper">
     <div class="container-fluid bg-div">
-      <!-- <div class="row justify-content-center" style="height: 100vh">
-        <div class="col col-auto text-center">
-          <picture class="logo-big">
-            <svg version="1.1"
-               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-               x="0px" y="0px" width="200.9px" height="200.9px" viewBox="0 0 200.9 200.9" style="enable-background:new 0 0 200.9 200.9;"
-               xml:space="preserve">
-            <defs>
-            </defs>
-            <g id="XMLID_54_">
-              <g id="quadro">
-                <path fill="#fafafa" id="XMLID_56_" d="M10,200.9L0,10L190.9,0l10,190.9L10,200.9z M6.3,15.7l9.4,178.9l178.9-9.4L185.2,6.3
-                  L6.3,15.7z"/>
-              </g>
-                <animate xlink:href="#quadro" attributeType="CSS" attributeName="opacity" 
-                       from="0" to="1" dur=".5s"  keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1"/>
-                <animateTransform xlink:href="#quadro" attributeType="xml" attributeName="transform"
-                                type="rotate"
-                 
-                                dur="1s"
-                                values="3 180 50; 2.9 180 50; 2.8 180 50; 2.5 180 50; 1.7 180 50; 0.4 180 50; 0 180 50"
-                                keyTimes="0; 0.01; 0.02; 0.03; 0.5; 0.8; 1"/>
-            </g>
-            <g id="XMLID_15_">
-              <g id="XMLID_29_">
-                <path fill="#fafafa" id="a" d="M38.5,133.2c0,1,0.3,1.7,1.2,1.7c0.5,0,1-0.2,1.5-0.6l0.2,1.4c-0.6,0.4-1.4,0.7-2.3,0.7
-                  c-1.4,0-2.1-0.7-2.3-2c-1,1.1-2.7,2-4.6,2c-4,0-6.5-2.9-6.5-6.9c0-4.1,2.6-7,6.5-7c1.9,0,3.5,0.8,4.5,1.8v-1.6h1.7V133.2z
-                   M36.7,125.9c-0.8-0.9-2.4-1.8-4.1-1.8c-3.2,0-5.2,2.2-5.2,5.4c0,3.1,2,5.3,5.2,5.3c1.7,0,3.3-0.9,4.1-1.8V125.9z"/>
-
-                <path fill="#fafafa" id="d" d="M57,118v15.3c0,1.1,0.3,1.7,1.2,1.7c0.5,0,0.9-0.2,1.5-0.6l0.2,1.4
-                  c-0.6,0.4-1.5,0.7-2.3,0.7c-1.4,0-2.1-0.6-2.3-1.9c-1,1.1-2.6,1.9-4.6,1.9c-3.9,0-6.6-2.9-6.6-7c0-4.1,2.6-6.9,6.6-6.9
-                  c1.9,0,3.5,0.8,4.6,1.8V118H57z M51.1,134.9c1.8,0,3.4-0.9,4.2-1.8V126c-0.8-0.9-2.4-1.9-4.2-1.9c-3.1,0-5.2,2.2-5.2,5.4
-                  C45.9,132.6,48,134.9,51.1,134.9z"/>
-                <path fill="#fafafa" id="v" d="M64.4,125.7c0-1.1-0.3-1.7-1.2-1.7c-0.5,0-1,0.2-1.5,0.5l-0.2-1.4c0.6-0.4,1.4-0.7,2.3-0.7
-                  c1.6,0,2.4,0.9,2.4,2.9v5c0,2.9,1.6,4.5,4.2,4.5c2.6,0,4.6-1.9,4.6-5.1c0-3-0.9-5.7-1.5-7h1.8c0.4,1.1,1.4,3.9,1.4,7.1
-                  c0,4-2.7,6.6-6.4,6.6c-3.7,0-5.9-2.2-5.9-5.9V125.7z"/>
-                <path fill="#fafafa" id="o" d="M88.1,122.4c4.2,0,7.2,3,7.2,7.1c0,4-3,7-7.2,7c-4.2,0-7.1-3-7.1-7
-                  C81,125.4,84,122.4,88.1,122.4z M88.1,134.9c3.2,0,5.5-2.3,5.5-5.4c0-3.1-2.2-5.5-5.5-5.5c-3.2,0-5.4,2.4-5.4,5.5
-                  C82.7,132.6,84.9,134.9,88.1,134.9z"/>
-                <path fill="#fafafa" id="c" d="M112,134.7c-1.4,1.1-3.4,1.9-5.5,1.9c-5.1,0-7.2-3-7.2-7c0-4.1,2.7-7.1,7-7.1
-                  c3.7,0,5.7,2.1,5.8,5.1l-1.6,0.4c-0.1-2.3-1.5-3.9-4.2-3.9c-3.3,0-5.2,2.3-5.2,5.5c0,3.1,1.6,5.5,5.6,5.5c1.6,0,3.4-0.8,4.6-1.7
-                  L112,134.7z"/>
-                <path fill="#fafafa" id="a" d="M128.8,133.2c0,1,0.3,1.7,1.2,1.7c0.5,0,1-0.2,1.5-0.6l0.2,1.4c-0.6,0.4-1.4,0.7-2.3,0.7
-                  c-1.4,0-2.1-0.7-2.3-2c-1,1.1-2.7,2-4.6,2c-4,0-6.5-2.9-6.5-6.9c0-4.1,2.6-7,6.5-7c1.9,0,3.5,0.8,4.5,1.8v-1.6h1.7V133.2z
-                   M127.1,125.9c-0.8-0.9-2.4-1.8-4.1-1.8c-3.2,0-5.2,2.2-5.2,5.4c0,3.1,2,5.3,5.2,5.3c1.7,0,3.3-0.9,4.1-1.8V125.9z"/>
-                <path fill="#fafafa" id="c" d="M147.3,134.7c-1.4,1.1-3.4,1.9-5.5,1.9c-5.1,0-7.2-3-7.2-7c0-4.1,2.7-7.1,7-7.1
-                  c3.7,0,5.7,2.1,5.8,5.1l-1.6,0.4c-0.1-2.3-1.5-3.9-4.2-3.9c-3.3,0-5.2,2.3-5.2,5.5c0,3.1,1.6,5.5,5.6,5.5c1.6,0,3.4-0.8,4.6-1.7
-                  L147.3,134.7z"/>
-                <path fill="#fafafa" id="i" d="M153,117.8c0.7,0,1.2,0.3,1.2,1.2c0,0.8-0.5,1.2-1.2,1.2c-0.8,0-1.3-0.3-1.3-1.2
-                  C151.7,118.1,152.2,117.8,153,117.8z M153.8,133.2c0,1,0.3,1.7,1.2,1.7c0.5,0,1.1-0.3,1.5-0.6l0.2,1.4c-0.4,0.3-1.4,0.7-2.3,0.7
-                  c-1.6,0-2.4-1-2.4-2.9v-10.8h1.7V133.2z"/>
-                <path fill="#fafafa" id="a" d="M172.3,133.2c0,1,0.3,1.7,1.2,1.7c0.5,0,1-0.2,1.5-0.6l0.2,1.4c-0.6,0.4-1.4,0.7-2.3,0.7
-                  c-1.4,0-2.1-0.7-2.3-2c-1,1.1-2.7,2-4.6,2c-4,0-6.5-2.9-6.5-6.9c0-4.1,2.6-7,6.5-7c1.9,0,3.5,0.8,4.5,1.8v-1.6h1.7V133.2z
-                   M170.6,125.9c-0.8-0.9-2.4-1.8-4.1-1.8c-3.2,0-5.2,2.2-5.2,5.4c0,3.1,2,5.3,5.2,5.3c1.7,0,3.3-0.9,4.1-1.8V125.9z"/>
-              </g>
-              <g id="XMLID_16_">
-                <path fill="#fafafa" id="D" d="M27.9,64.9h15c10.9,0.1,18.9,6.5,18.9,18.4c0,11.8-8.1,18.3-18.9,18.3h-15V64.9z M33.5,69.8
-                  v26.9h9.1c7.8,0,13.4-4.7,13.4-13.4c0-8.7-5.6-13.4-13.4-13.5H33.5z"/>
-                <path fill="#fafafa" id="B" d="M70.4,64.9h14.2c7.7,0,12.5,3,12.5,9.6c0,4.1-2.4,6.7-6.2,8c5.6,1,9.1,3.9,9.1,9.4
-                  c0,5.9-4.4,9.7-12.9,9.7H70.4V64.9z M83.6,80.4c4.6,0,7.7-1.6,7.7-5.2c0-4-2.8-5.4-7.4-5.4H76v10.6H83.6z M86.3,96.7
-                  c5.1,0,7.7-1.9,7.7-5.5c0-4.2-3.2-5.9-8.6-5.9H76v11.4H86.3z"/>
-                <path fill="#fafafa" id="R" d="M108.2,64.9h16c8.2,0,13.8,3.6,13.8,11.8c0,6.3-4.6,10.6-10.5,11.3l12.8,12.7v0.9h-6.5
-                  l-13.3-13.5h-6.7v13.5h-5.6V64.9z M113.8,69.8v13.8h11c4.1,0,7.3-2.5,7.3-6.9c0-4.7-3.2-7-7.3-7H113.8z"/>
-                <path fill="#fafafa" id="S" d="M147.7,93.5c2.5,1.6,6.9,3.4,11.7,3.4c5.3,0,9-2.1,9-5.7c0-2.6-1.9-4-6.4-5.1l-6.6-1.6
-                  c-6.2-1.5-9.2-4.7-9.2-9.6c0-5.8,4.5-10.6,14.2-10.6c5.1,0,10.1,1.5,12.8,2.9l-1.6,5.2c-2.6-1.6-7.3-2.9-11.4-2.9
-                  c-5.7,0-8.2,2.2-8.2,4.9c0,2.5,1.7,3.8,5.1,4.7l7.1,1.8c6.5,1.7,9.9,4.6,9.9,9.8c0,6.8-6.3,11.3-15,11.3c-5.3,0-10.6-1.8-12.9-3.2
-                  L147.7,93.5z"/>
-              </g>
-            </g>
-            </svg>
-          </picture>
-          <h3>Site em construção.</h3>
-          <p class=""><strong>Contato:</strong> dbrs.advocacia@gmail.com</p>
-        </div>
-      </div> -->
       <div class="row">
-
         <div class="d-none d-xl-flex col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item"></div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item3">
           <div class="text-center">
@@ -133,14 +41,16 @@
             <div class="linha" style="margin-bottom: 0"></div>
           </div>
         </div>
-
+        
         <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item2">
           <div class="absolute-center text-center">
             <h2>Despre noi</h2>
             <div class="linha" style="background: white; margin-bottom: 20px; margin-top: 10px; height: 2px"></div>
             <p class="lead">Clientii nostri reprezinta sursa noastra de inspiratie si de provocare.</p>
+             <a href="sobre.html"><button type="button" class="btn btn-outline-light">Leia mais</button></a>
           </div>
         </div>
+        
         <div class="d-none d-lg-flex d-xl-flex  col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item"></div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item3">
         </div>
@@ -148,24 +58,109 @@
         <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item "></div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item3">
           <div class="absolute-center text-center">
-            <h2>Echipa</h2>
+            <h2>Equipe</h2>
             <div class="linha" style="background: white; margin-bottom: 20px; margin-top: 10px; height: 2px"></div>
             <ul class="list-inline">
               <li class="li">
-                <button type="button" class="btn btn-outline-light">Miles <strong>Davis</strong></button>
+                <button id="d" type="button" class="btn btn-outline-light">Miles <strong>Davis</strong></button>
               </li>
               <li class="li">
-                <button type="button" class="btn btn-outline-light">Charles <strong>Bradley</strong></strong></button></li>
+                <button id="b" type="button" class="btn btn-outline-light">Charles <strong>Bradley</strong></strong></button></li>
               <li class="li">
-                <button type="button" class="btn btn-outline-light">Joe <strong>Ramone</strong></button></li>
+                <button id="r" type="button" class="btn btn-outline-light">Joey <strong>Ramone</strong></button></li>
               <li class="li">
-                <button type="button" class="btn btn-outline-light">Ringo <strong>Starr</strong></button></li>
+                <button id="s" type="button" class="btn btn-outline-light">Ringo <strong>Starr</strong></button></li>
             </ul>
           </div></div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item "></div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item4"></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 home-item item3"></div>
       </div>
     </div>
+    <div id="d-about" class="team-member">
+      <div class="row">
+        <div class="col-12">
+          <span class="oi oi-x" title="x" aria-hidden="true"></span>
+          <h1 class="float-left"><span style="font-weight: 500">Miles</span> Davis <small>/ Jazz Musician</small></h1>
+        </div>
+        <div class="col-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Miles_Davis_22.jpg/375px-Miles_Davis_22.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-9">
+          <p>Miles Dewey Davis III (Alton, 26 de maio de 1926 – Santa Mônica, 28 de setembro de 1991) foi um trompetista, compositor e bandleader de jazz norte-americano.</p>
+          <p>Considerado um dos mais influentes músicos do século XX, Davis esteve na vanguarda de quase todos os desenvolvimentos do jazz desde a Segunda Guerra Mundial até a década de 1990. Ele participou de várias gravações do bebop e das primeiras gravações do cool jazz. Foi parte do desenvolvimento do jazz modal, e também do jazz fusion que originou-se do trabalho dele com outros músicos no final da década de 1960 e no começo da década de 1970.</p>
+        </div>
+      </div>
+    </div>
+    <div id="b-about" class="team-member">
+      <div class="row">
+        <div class="col-12">
+          <span class="oi oi-x" title="x" aria-hidden="true"></span>
+          <h1 class="float-left"><span style="font-weight: 500">Charles</span> Bradley <small>/ Soul Singer</small></h1>
+        </div>
+        <div class="col-3">
+          <img src="https://img.apmcdn.org/e27663dd2f926a460d1583d71aa75f84c322dbe5/uncropped/82ae60-20160526-charles-bradley-12.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-9">
+          <p>Charles Bradley (5 de novembro de 1948 - 23 de setembro de 2017) foi um cantor estadunidense de funk, soul e R&B nascido em 1948 em Gainesville, Flórida.[1] Suas performances e estilo de gravação consistem com os padrões revival da gravadora com a qual trabalha, a Daptone Records, celebrando o sentimento da música funk e soul das décadas de 60 e 70.[2] Bradley demonstra claramente as influências de James Brown e Otis Redding, tendo inclusive sido dito que ele ecoa a rendição evocativa de Otis Redding.[3]</p>
+          <p>Bradley é o assunto do documentário "Soul of America", que teve seu lançamento no South by Southwest em 2012.[4]</p>
+          <p>As canções de Charles Bradley foram muito ouvidas durante o seriado americano "Suits", geralmente por um dos principais personagens, o renomado advogado "Harvey Specter", que tem o LP de Bradley como um dos preferidos de sua coleção dentro de seu charmoso escritório.</p>
+        </div>
+      </div>
+    </div>
+    <div id="r-about" class="team-member">
+      <div class="row">
+        <div class="col-12">
+          <span class="oi oi-x" title="x" aria-hidden="true"></span>
+          <h1 class="float-left"><span style="font-weight: 500">Joey</span> Ramone <small>/ Punk Rocker</small></h1>
+        </div>
+        <div class="col-3">
+          <img src="https://static1.squarespace.com/static/579660111b631bbee6b97592/t/591ece9b1b10e3a2b2cc00cd/1495191198248/IMG_3424.JPG" class="img-fluid" alt="">
+        </div>
+        <div class="col-9">
+          <p>Joey Ramone, nome artístico de Jeffrey Ross Hyman (Nova Iorque, 19 de maio de 1951 — Nova Iorque, 15 de abril de 2001) foi um vocalista norte-americano e letrista, sendo seu trabalho mais conhecido a banda de punk rock Ramones. Junto com seu companheiro de banda Johnny Ramone (John Cummings), foram os únicos membros que permaneceram desde o início da banda até o fim em 1996.</p>
+          <p>Hyman cresceu em Forest Hills, no Queens, em uma comunidade de judeus. Teve uma vida bastante conturbada, o que inspirou o som "We're A Happy Family", do álbum Rocket to Russia. Seus pais se divorciaram no começo de 1960. Sua mãe, Charlotte Lesher (1926-2007), encorajou um interesse na música em ambos os filhos: Joey e seu irmão mais novo, Mitchell (que atende pelo pseudônimo de Mickey Leigh).</p>
+        </div>
+      </div>
+    </div>
+    <div id="s-about" class="team-member">
+      <div class="row">
+        <div class="col-12">
+          <span class="oi oi-x" title="x" aria-hidden="true"></span>
+          <h1 class="float-left"><span style="font-weight: 500">Ringo</span> Starr <small>/ Beatles Drummer</small></h1>
+        </div>
+        <div class="col-4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ringo_Starr_and_all_his_band_%288470866906%29.jpg/300px-Ringo_Starr_and_all_his_band_%288470866906%29.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-8">
+          <p>Sir Richard Starkey, MBE (Liverpool, 7 de julho de 1940),[1] mais conhecido pelo seu nome artístico Ringo Starr, é um músico, baterista, multi-instrumentista, cantor, compositor e ator britânico, que ganhou fama mundial como baterista dos Beatles após substituir Pete Best, ficando nos Beatles até a separação do grupo em 1970. Quando a banda foi formada em 1960, Starr era membro de outra banda de Liverpool, Rory Storm and the Hurricanes. Além de atuar como baterista, Starr foi intérprete de canções de sucesso dos Beatles (em particular, "With a Little Help from My Friends" e "Yellow Submarine"), como co-autor em "What Goes On" e compôs "Don't Pass Me By" e "Octopus's Garden".</p>
+          <p>Ringo é conhecido pelo seu estilo seguro de tocar e pelos seus toques de originalidade. O apelido Ringo surgiu por causa dos anéis que Ringo gostava de usar (ring quer dizer anel em inglês). Ele também é vegetariano, assim como outros integrantes dos Beatles, Paul McCartney e George Harrison. Em 2011, Starr foi eleito o 4º maior baterista de todos os tempos pela revista Rolling Stone.</p>
+          <p>Após a dissolução dos Beatles em 1970, Starr lançou-se em uma carreira solo de sucessos, e formou uma banda a All Starr Band, na ativa desde 1989.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+          <h2 class="text-center">Fale Conosco</h2>
+          <div class="linha" style="margin-bottom: 5px; background: chocolate; height: 2px;"></div>
+          <ul class="list-inline" style="margin-bottom: 0">
+            <li class="list-inline-item"><span class="oi oi-envelope-closed" title="envelope-closed" aria-hidden="true"></span> dbrsadvocacia@gmail.com</li>
+            <li class="list-inline-item"><span class="oi oi-phone" title="phone" aria-hidden="true"></span> (11) 9 9116 9592</li>
+          </ul>
+        </div>
+        <div class="col-12">
+          <hr style="border-top: 1px solid rgba(255,255,255,.1)">
+        </div>
+      </div>
+      <div class="justify-content-md-center row">
+        <div class="col-auto">
+          <small>Desenvolvido por <a href="https://viniciusofp.com.br" target="_blank"><strong>viniciusofp</strong></a>.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     
 
@@ -174,5 +169,23 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script>
+      var ids = ['#d', '#b', '#r', '#s'];
+      ids.forEach(function(id) {
+        var about = id + '-about';
+        $(id).click(function() {
+          if (! $(about).hasClass('open')) {
+            $('.team-member').removeClass('open');
+            $(about).addClass('open');
+          } else {
+            $('.team-member').removeClass('open');
+          }
+        })
+          
+      })
+      $('.oi-x').click(function() {
+        $('.team-member').removeClass('open');
+      })
+    </script>
   </body>
 </html>
